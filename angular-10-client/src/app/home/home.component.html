@@ -1,0 +1,90 @@
+<div class="col-md-12" >
+  <div class="card card-container-table">
+    <table cdk-table [dataSource]="currentUsers">
+
+      <ng-container cdkColumnDef="id">
+        <th cdk-header-cell *cdkHeaderCellDef> Id </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="login">
+        <th cdk-header-cell *cdkHeaderCellDef> Login </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.login}} </td>
+      </ng-container>
+    
+      <ng-container cdkColumnDef="password">
+        <th cdk-header-cell *cdkHeaderCellDef> Password </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.password}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="firstName">
+        <th cdk-header-cell *cdkHeaderCellDef> First Name </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.firstName}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="lastName">
+        <th cdk-header-cell *cdkHeaderCellDef> Last Name </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.lastName}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="email">
+        <th cdk-header-cell *cdkHeaderCellDef> Email </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="color">
+        <th cdk-header-cell *cdkHeaderCellDef> Color </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.color}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="birthday">
+        <th cdk-header-cell *cdkHeaderCellDef> Birthday </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.birthday}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="phone">
+        <th cdk-header-cell *cdkHeaderCellDef> Phone </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.phone}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dhCreation">
+        <th cdk-header-cell *cdkHeaderCellDef> Creation Date </th>
+        <td cdk-cell *cdkCellDef="let element"> {{format(element.dhCreation)}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dhLastUpdate">
+        <th cdk-header-cell *cdkHeaderCellDef> Last Update </th>
+        <td cdk-cell *cdkCellDef="let element"> {{format(element.dhLastUpdate)}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dhLastLogin">
+        <th cdk-header-cell *cdkHeaderCellDef> Last Login </th>
+        <td cdk-cell *cdkCellDef="let element"> {{format(element.dhLastLogin)}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="actions">
+        <th cdk-header-cell *cdkHeaderCellDef> Actions
+          <button (click)="onAdd()" mat-mini-fab enabled aria-label="Add Car">
+            <mat-icon>add</mat-icon>
+          </button>  
+        </th>
+        <td cdk-cell *cdkCellDef="let row"> 
+        <div class="inner-button-grid">
+          <button (click)="onEdit(row.id)" mat-mini-fab enabled aria-label="Edit Car">
+            <mat-icon>edit</mat-icon>
+          </button> 
+        </div>
+        <div class="inner-button-grid">
+          <button (click)="onDelete(row.id)" mat-mini-fab enabled aria-label="Remove Car">
+            <mat-icon>delete</mat-icon>
+          </button> 
+        </div>
+        </td>
+      </ng-container>
+
+    
+      <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+      <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;" ></tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+<div class="col-md-12" *ngIf="currentUser; else loggedOut">
+  <div class="card card-container">
+    <mat-icon>toys</mat-icon>
+    <form
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <div class="form-group">
+        <label for="model">Model</label>
+        <input
+          type="text"
+          class="form-control"
+          name="model"
+          required
+          [(ngModel)]="form.model"
+          maxlength="50"
+          #login="ngModel"
+        />
+        <div class="alert-danger" *ngIf="f.submitted && form.model.invalid">
+          <div *ngIf="model.errors.required">Model is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+          <label for="licensePlate">License_plate</label>
+          <input
+            type="text"
+            class="form-control"
+            name="licensePlate"
+            required
+            [(ngModel)]="form.licensePlate"
+            maxlength="20"
+            #login="ngModel"
+          />
+          <div class="alert-danger" *ngIf="f.submitted && form.licensePlate.invalid">
+            <div *ngIf="licensePlate.errors.required">License plate is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            pattern="/^-?\d+\.?\d*$/" 
+            onkeypress="if(this.value.length==this.maxLength) return false;"
+            onfocusout="if(this.value.length>this.maxLength) this.value = this.value.slice(0,this.maxLength);"
+            min="0" 
+            max="9999"
+            class="form-control"
+            name="year"
+            required
+            [(ngModel)]="form.year"
+            maxlength="4"
+            #login="ngModel"
+          />
+          <div class="alert-danger" *ngIf="f.submitted && form.year.invalid">
+            <div *ngIf="year.errors.required">Year is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="color">Color</label>
+          <input
+            type="text"
+            class="form-control"
+            name="color"
+            required
+            [(ngModel)]="form.color"
+            maxlength="20"
+            #login="ngModel"
+          />
+          <div class="alert-danger" *ngIf="f.submitted && form.color.invalid">
+            <div *ngIf="color.errors.required">Color is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            class="form-control"
+            name="country"
+            required
+            [(ngModel)]="form.country"
+            maxlength="30"
+            #login="ngModel"
+          />
+          <div class="alert-danger" *ngIf="f.submitted && form.country.invalid">
+            <div *ngIf="country.errors.required">Country is required</div>
+          </div>
+        </div>
+        
+
+
+      <div class="form-group">
+          <button class="btn btn-primary btn-block" (click)="onSubmit()">Save</button>
+      </div>
+
+      <div class="form-group">
+          <button class="btn btn-primary btn-block" (click)="back()">Back</button>
+      </div>
+
+      <div class="alert alert-warning" *ngIf="f.submitted && !isSuccessful">
+          Add car failed!<br />{{ errorMessage }}
+      </div>
+      <div class="alert alert-success" *ngIf="isSuccessful">
+          Your registration is successful!
+      </div>
+    </form>
+
+    
+  </div>
+</div>
+
+<ng-template #loggedOut>
+  Please login.
+</ng-template>

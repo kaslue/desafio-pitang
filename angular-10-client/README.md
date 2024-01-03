@@ -20,7 +20,7 @@ Para a versão do angular foi utilizada a versão 10.0.0
 > npm install -g @angular/cli@10.0.0
 
 ## Compilando
-Para instalar as dependencias desse projeto utilizar o seguinte comando quando estiver no 
+Para instalar as dependências desse projeto utilizar o seguinte comando quando estiver no 
 diretório do projeto:
 > npm install
 
@@ -44,19 +44,19 @@ um usuário esteja logado não poderá ser removido, apenas se ele tiver desloga
  - As mensagens, menus e botões estão em inglês para padronizar o teste em si.
 
  - Para adicionar um usuário deverá ir até o botão "Sign Up" no menu superior ou no botão adicionar(+) na tabela da listagem 
- - dos usuários.
+dos usuários.
 
  - Existe uma mensagem de confirmação para que o usuário seja excluido.
- - Apenas é mostrado os dados do usuário e seus carros no menú superior "User Profile", porém este usuário precisa estar logado
+ - Apenas é mostrado os dados do usuário e seus carros no menu superior "User Profile", porém este usuário precisa estar logado
 
  - Com o usuário logado e nesta tela de "User Profile" é possível ver os dados do usuário assim como atualizá-los, 
  - Também aparecem os carros daquele usuário assim como os comandos para adicionar (+), editar (/) ou remover o(s) carro(s) do(s) 
- - usuário(s). 
+usuário(s). 
 
- - Não é possível cadastrar um usuário com o mesmo e-mail de um que já exista na base
- - Não é possível cadastrar um usuário com o mesmo login de um que já exista na base
+ - Não é possível cadastrar um usuário com o mesmo e-mail de um que já exista na base.
+ - Não é possível cadastrar um usuário com o mesmo login de um que já exista na base.
  - Não é possível cadastrar um carro com a mesma placa e país, ou seja, placa e país são uma chave composta, pois cada país 
-   tem suas regras para manufatura de uma placa, porém dentro de um mesmo país esta não pode se repetir.
+   tem suas regras para manufatura de uma placa, porém dentro de um mesmo país, esta não pode se repetir.
 * Tela de exibição e edição do usuário logado (User Profile)
 > ![tela-exemplo-profile-logado](tela-exemplo-profile-logado.png)
 
@@ -66,11 +66,11 @@ um usuário esteja logado não poderá ser removido, apenas se ele tiver desloga
   quais precisam de autenticação.
 
 ## Melhorias Futuras
- - Existem regras de nível de usuário porém para o exemplo foram usadas apenas a verificação básica ao qual ferifica se o 
+ - Existem regras de nível de usuário. Porém para o exemplo foram usadas apenas a verificação básica ao qual ferifica se o 
 usuário está logado, porém para futuras melhorias estaria incluso algumas restrições que somente um administrador ou 
 moderador poderiam acessar um bom exemplo para este teste seria o fato de um um usuário administrador ter acesso a listagens
 mais elaboradas ou mesmo poder editar os carros de qualquer usuário cadastrado.
  - Melhoria do leiaute, pois ficou bem básico e nada visualmente muito atrativo.
  - Melhoria nas validações e retornos de funções.
- - Melhoria nos logs
+ - Melhoria nos logs.
  - Criação de testes unitários.

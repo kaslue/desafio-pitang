@@ -1,6 +1,6 @@
 # Angular + Spring Pitang Test - Parte Spring
 
-## Versão Compatível e Prerequisitos
+## Versão Compatível e Pré-requisitos
 - Utilizar o Git para clonar o projeto, para fazer o download segue o link:
 > https://git-scm.com/downloads
 - Comando para clonar:
@@ -14,11 +14,15 @@ utilizar a JDK mas recente que tiver no site da oracle:
  banco de dados em memória como por exemplo o H2, preferi utilizar um banco de dados mais convencional,
  pois em uma situação mais realista o banco em memória é mais utilizado para testes unitários 
  ou em rotinas que se exija distribuir dados em memória por conta de desempenho entre outros.
+
+- Porém caso prefira utilizar o banco H2 favor rodar o projeto já configurado para H2 do seguinte 
+Readme.md:
+> [README.md do spring-com-h2](../spring-boot-server/README.md)
 - O proprio pode ser baixando no pacote do XAMPP no link abaixo:
 > https://www.apachefriends.org/pt_br/download.html
 - Ao instalar o XAMPP iniciar Control Pannel dar "Start" nos serviços do Apache e MySQL como mostra a
 imagem:
-![control-panel-xampp](control-panel-xampp.png)
+> ![control-panel-xampp](control-panel-xampp.png)
 - Clicar em "Admin"
 - Dentro desse SGBD criar um banco de dados com um nome sugestivo como por exemplo "pitang_test_db"
 - É recomendável também mudar senha e/ou usuário padrão do mysql assim como criar um novo usuário
@@ -45,7 +49,7 @@ baixar as dependências do projeto, como mostra a imagem abaixo:
 - Para compilar o projeto no ambiente do IntelliJ basta pressionar:
 > Ctrl + F9
 
-- Para gerar o jar do projeto para instalação do serviço em algum ambiente basta rodar os 
+- Para gerar o jar do projeto para instalação do serviço em algum ambiente basta rodar o
 seguinte comando:
 > mvn clean install
 

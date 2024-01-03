@@ -1,0 +1,120 @@
+"C:\Program Files\Java\jdk-21\bin\java.exe" -Dmaven.multiModuleProjectDirectory=C:\projetos\spring\pitang-temp\spring-boot-server -Djansi.passthrough=true "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=53449:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.7.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license" org.codehaus.classworlds.Launcher -Didea.version=2023.3.2 clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.pitang.test:spring-boot-pitang-test >---------------
+[INFO] Building spring-boot-pitang-test 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ spring-boot-pitang-test ---
+[INFO] Deleting C:\projetos\spring\pitang-temp\spring-boot-server\target
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ spring-boot-pitang-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ spring-boot-pitang-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to C:\projetos\spring\pitang-temp\spring-boot-server\target\classes
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ spring-boot-pitang-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\projetos\spring\pitang-temp\spring-boot-server\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ spring-boot-pitang-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\projetos\spring\pitang-temp\spring-boot-server\target\test-classes
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ spring-boot-pitang-test ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.pitang.test.SpringBootPitangTestApplicationTests
+23:04:54.509 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.514 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:04:54.523 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:04:54.542 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.pitang.test.SpringBootPitangTestApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:04:54.552 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.pitang.test.SpringBootPitangTestApplicationTests], using SpringBootContextLoader
+23:04:54.556 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.pitang.test.SpringBootPitangTestApplicationTests]: class path resource [com/pitang/test/SpringBootPitangTestApplicationTests-context.xml] does not exist
+23:04:54.556 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.pitang.test.SpringBootPitangTestApplicationTests]: class path resource [com/pitang/test/SpringBootPitangTestApplicationTestsContext.groovy] does not exist
+23:04:54.556 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.pitang.test.SpringBootPitangTestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:04:54.557 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.pitang.test.SpringBootPitangTestApplicationTests]: SpringBootPitangTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:04:54.595 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.688 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\projetos\spring\pitang-temp\spring-boot-server\target\classes\com\pitang\test\SpringBootPitangTestApplication.class]
+23:04:54.689 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.pitang.test.SpringBootPitangTestApplication for test class com.pitang.test.SpringBootPitangTestApplicationTests
+23:04:54.778 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.pitang.test.SpringBootPitangTestApplicationTests]: using defaults.
+23:04:54.779 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+23:04:54.797 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@316bcf94, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6404f418, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3e11f9e9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1de5f259, org.springframework.test.context.support.DirtiesContextTestExecutionListener@729d991e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@31fa1761, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@957e06, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@32502377, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2c1b194a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4dbb42b7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66f57048, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@550dbc7a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@21282ed8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@36916eb0]
+23:04:54.799 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.800 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.802 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.802 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.803 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.803 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.807 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2d52216b testClass = SpringBootPitangTestApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@242b836 testClass = SpringBootPitangTestApplicationTests, locations = '{}', classes = '{class com.pitang.test.SpringBootPitangTestApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@327b636c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3745e5c6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@501edcf1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@223f3642], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+23:04:54.808 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.808 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pitang.test.SpringBootPitangTestApplicationTests]
+23:04:54.834 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2024-01-02 23:04:55.086  INFO 11556 --- [           main] p.t.SpringBootPitangTestApplicationTests : Starting SpringBootPitangTestApplicationTests on DESKTOP-RN9DTTS with PID 11556 (started by SkyWalker in C:\projetos\spring\pitang-temp\spring-boot-server)
+2024-01-02 23:04:55.087  INFO 11556 --- [           main] p.t.SpringBootPitangTestApplicationTests : No active profile set, falling back to default profiles: default
+2024-01-02 23:04:55.948  INFO 11556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-02 23:04:56.084  INFO 11556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124ms. Found 3 repository interfaces.
+2024-01-02 23:04:56.641  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28eb4a26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:56.712  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c1991260] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:56.729  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:56.732  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3ae9d1e2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:56.743  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$e66db512] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:56.765  INFO 11556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-02 23:04:57.072  INFO 11556 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02 23:04:57.292  INFO 11556 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02 23:04:57.374  INFO 11556 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-01-02 23:04:57.454  INFO 11556 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2024-01-02 23:04:57.455  INFO 11556 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-01-02 23:04:57.667  INFO 11556 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-01-02 23:04:57.901  INFO 11556 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2024-01-02 23:04:58.758  INFO 11556 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-02 23:04:59.629  WARN 11556 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-02 23:04:59.773  INFO 11556 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b0575d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@153409b8, org.springframework.security.web.header.HeaderWriterFilter@56a9b662, org.springframework.web.filter.CorsFilter@fd0e118, org.springframework.security.web.authentication.logout.LogoutFilter@3605ab16, com.pitang.test.security.jwt.AuthTokenFilter@4713b631, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@126a9a77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14bf9fd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62f6185a, org.springframework.security.web.session.SessionManagementFilter@180d918a, org.springframework.security.web.access.ExceptionTranslationFilter@903c13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@144dc2f7]
+2024-01-02 23:05:00.258  INFO 11556 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-02 23:05:00.542  INFO 11556 --- [           main] p.t.SpringBootPitangTestApplicationTests : Started SpringBootPitangTestApplicationTests in 5.698 seconds (JVM running for 6.454)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.277 s - in com.pitang.test.SpringBootPitangTestApplicationTests
+2024-01-02 23:05:00.689  INFO 11556 --- [       Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-02 23:05:00.691  INFO 11556 --- [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-02 23:05:00.693  INFO 11556 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02 23:05:00.702  INFO 11556 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.1.2:jar (default-jar) @ spring-boot-pitang-test ---
+[INFO] Building jar: C:\projetos\spring\pitang-temp\spring-boot-server\target\spring-boot-pitang-test-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:2.1.8.RELEASE:repackage (repackage) @ spring-boot-pitang-test ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ spring-boot-pitang-test ---
+[INFO] Installing C:\projetos\spring\pitang-temp\spring-boot-server\target\spring-boot-pitang-test-1.0.0.jar to C:\Users\SkyWalker\.m2\repository\com\pitang\test\spring-boot-pitang-test\1.0.0\spring-boot-pitang-test-1.0.0.jar
+[INFO] Installing C:\projetos\spring\pitang-temp\spring-boot-server\pom.xml to C:\Users\SkyWalker\.m2\repository\com\pitang\test\spring-boot-pitang-test\1.0.0\spring-boot-pitang-test-1.0.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.194 s
+[INFO] Finished at: 2024-01-02T23:05:02-03:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0

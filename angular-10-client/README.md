@@ -1,7 +1,7 @@
 # Angular + Spring Pitang Test - Parte Angular
 
 ## Pre-requisitos
-- Ter seguido os passos do README.md do código Sprign no serviço java:
+- Ter seguido os passos do README.md do código Spring no serviço java:
 > [README-Spring.md](../spring-boot-server/README.md)
 - Executar o serviço Spring antes.
 
